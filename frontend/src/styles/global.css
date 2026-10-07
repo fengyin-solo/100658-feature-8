@@ -35,3 +35,33 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+.legend-check { font-style: normal; }
+.ok-text { color: #067647; font-style: normal; margin-left: 4px; }
+
+.notice { display: flex; justify-content: space-between; align-items: center; gap: 12px; border-radius: 6px; padding: 8px 12px; margin-bottom: 10px; font-size: 13px; border: 1px solid var(--border); }
+.notice-success { background: #ecfdf3; border-color: #abefc6; color: #067647; }
+.notice-warning { background: #fffaeb; border-color: #fedf89; color: #b54708; }
+.notice-error { background: #fef3f2; border-color: #fda29b; color: #b42318; }
+
+.read-error { display: flex; align-items: center; gap: 12px; background: #fef3f2; border: 1px solid #fda29b; border-radius: 6px; padding: 8px 12px; margin-bottom: 10px; font-size: 13px; }
+.read-error .btn { flex: none; }
+
+.dosing-table .cell-basis { max-width: 280px; min-width: 200px; color: var(--muted); }
+.row-abnormal { background: #fffaeb; }
+.tag { display: inline-block; border-radius: 4px; padding: 1px 6px; font-size: 12px; }
+.tag-abnormal { background: #fef0c7; color: #b54708; }
+.foot-tools { display: flex; gap: 10px; }
+
+.modal-mask { position: fixed; inset: 0; background: rgba(16, 24, 40, 0.45); display: flex; align-items: center; justify-content: center; z-index: 20; }
+.modal { width: 520px; max-height: 88vh; overflow: auto; background: #fff; border-radius: 10px; padding: 18px 20px; }
+.modal h3 { margin: 0 0 6px; font-size: 16px; }
+.modal-hint { margin: 0 0 12px; font-size: 12px; color: var(--muted); }
+.form-item { display: block; margin-bottom: 10px; }
+.form-item > span { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.form-item em { color: #b42318; font-style: normal; margin-left: 2px; }
+.form-item input { width: 100%; border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; font-size: 13px; }
+.form-item input.invalid { border-color: #f04438; background: #fef3f2; }
+.reading-preview { display: block; margin-top: 3px; font-size: 12px; color: var(--muted); }
+.reading-preview.preview-abnormal { color: #b54708; }
+.preview-warn { margin: 4px 0 10px; font-size: 12px; color: #b54708; background: #fffaeb; border: 1px solid #fedf89; border-radius: 6px; padding: 6px 8px; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 8px; }
