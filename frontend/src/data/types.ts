@@ -20,8 +20,8 @@ export type ModuleMeta = {
   metrics: string[]
 }
 
-export type PageResult = {
-  items: EntryRow[]
+export type PageResult<T = EntryRow> = {
+  items: T[]
   total: number
   page: number
   size: number
@@ -30,6 +30,23 @@ export type PageResult = {
 export type ActionResult = {
   ok: boolean
   message: string
+  duplicate?: boolean
+}
+
+export type DosingForm = {
+  加药编号: string
+  加药药剂: string
+  投加浓度: string
+  加药量: string
+  原水浊度: string
+  操作人员: string
+  加药时间: string
+}
+
+export type DosingQuery = {
+  filters?: Record<string, string>
+  startDate?: string
+  endDate?: string
 }
 
 export type OverviewResult = {
